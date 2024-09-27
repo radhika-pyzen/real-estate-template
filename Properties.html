@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Style/index.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-700 to-red-500 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-white font-bold text-xl">Real Estate Co.</a>
+                <div class="hidden md:block">
+                    <div class="flex space-x-6">
+                        <a href="index.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Home</a>
+                        <a href="Properties.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Properties</a>
+                        <a href="Projects.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Projects</a>
+                        <a href="Blog.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Blog</a>
+                        <a href="Contact.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="Properties.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Properties</a>
+                <a href="Projects.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="Blog.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="Contact.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- All Properties Section -->
+    <section class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-left custom-font-oswald mb-6">Explore Our Premium Properties</h2>
+
+            <!-- Button Group -->
+            <div class="flex justify-end space-x-4 mb-6">
+                <button
+                    class="bg-purple-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-600 transition">All
+                    Properties</button>
+                <button
+                    class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-200 transition">Luxury
+                    Properties</button>
+                <button
+                    class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-200 transition">Upcoming
+                    Properties</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Property Card Example -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/avisgrafik.jpeg" alt="Property 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Luxury Apartment in City Center</h3>
+                        <p class="text-gray-800 text-lg">Location: Downtown</p>
+                        <p class="text-gray-500 font-semibold">₹89.75 Lacs* Onwards</p>
+                        <p class="text-gray-600">8.93 - 98.82 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/Beijing BFS Fengtai.jpeg" alt="Property 2"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Modern Villa in Serenity Hills</h3>
+                        <p class="text-gray-800 text-lg">Location: Serenity Hills</p>
+                        <p class="text-gray-500 font-semibold">₹95.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">10.00 - 120.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/bg2.jpg" alt="Property 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Spacious Family Home in Green Meadows</h3>
+                        <p class="text-gray-800 text-lg">Location: Green Meadows</p>
+                        <p class="text-gray-500 font-semibold">₹75.50 Lacs* Onwards</p>
+                        <p class="text-gray-600">9.00 - 85.50 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-800 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/Shopping mall_Tahmid Ahmad.jpeg" alt="Property 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Charming Cottage in the Woods</h3>
+                        <p class="text-gray-800 text-lg">Location: Hilltop</p>
+                        <p class="text-gray-500 font-semibold">₹60.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">7.50 - 90.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/Symantec Culver City Campus, California.jpeg" alt="Property 5" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Elegant Penthouse with City Views</h3>
+                        <p class="text-gray-800 text-lg">Location: Uptown</p>
+                        <p class="text-gray-500 font-semibold">₹150.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">12.00 - 150.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/Hotel2.jpeg" alt="Property 6" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Cozy Studio Apartment</h3>
+                        <p class="text-gray-800 text-lg">Location: Riverside</p>
+                        <p class="text-gray-500 font-semibold">₹40.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">5.00 - 45.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 7 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/download.jpeg" alt="Property 7" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Stylish Loft in the Heart of the City</h3>
+                        <p class="text-gray-800 text-lg">Location: Central District</p>
+                        <p class="text-gray-500 font-semibold">₹85.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">9.50 - 95.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 8 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/Beijing BFS Fengtai.jpeg" alt="Property 8" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Luxury Beachfront Bungalow</h3>
+                        <p class="text-gray-800 text-lg">Location: Ocean View</p>
+                        <p class="text-gray-500 font-semibold">₹200.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">15.00 - 200.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 9 -->
+                <div class="border rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="Images/HomeImg/avisgrafik.jpeg" alt="Property 9" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-3">Rustic Farmhouse with Modern Amenities</h3>
+                        <p class="text-gray-800 text-lg">Location: Countryside</p>
+                        <p class="text-gray-500 font-semibold">₹70.00 Lacs* Onwards</p>
+                        <p class="text-gray-600">10.00 - 100.00 sq. mt.</p>
+                        <hr class="my-4">
+                        <div class="flex justify-between">
+                            <p class="text-left text-gray-600">Under Construction</p>
+                            <a href="#"
+                                class="inline-block bg-gradient-to-r from-purple-900 to-red-600 text-white px-8 py-2 rounded-full hover:from-purple-600 hover:to-red-400 transition">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enhanced Footer Section with Gradient -->
+    <footer class="bg-gradient-to-r from-purple-900 to-red-600 text-white px-6 lg:px-20 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Your Company Name</h3>
+                <p class="text-sm mb-2">Your trusted partner in real estate, dedicated to helping you find your dream
+                    property.</p>
+                <p class="text-sm mb-2">Address: 1234 Real Estate Ave, Noida, India</p>
+                <p class="text-sm">Join us in shaping a better community through real estate innovation.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Properties</a></li>
+                    <li><a href="#" class="hover:underline">Projects</a></li>
+                    <li><a href="#" class="hover:underline">Gallery</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                <p class="text-sm mb-2">Phone: <a href="tel:+911234567890" class="hover:underline">+91 123 456 7890</a>
+                </p>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@realestate.com"
+                        class="hover:underline">info@realestate.com</a></p>
+                <p class="text-sm mb-2">Follow us for the latest updates and news:</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-purple-500 pt-4">
+            <p class="text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p class="text-xs">Designed with care by [Your Name or Company].</p>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
+
+</body>
+
+</html>

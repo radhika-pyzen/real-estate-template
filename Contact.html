@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Style/index.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-700 to-red-500 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-white font-bold text-xl">Real Estate Co.</a>
+                <div class="hidden md:block">
+                    <div class="flex space-x-6">
+                        <a href="index.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Home</a>
+                        <a href="Properties.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Properties</a>
+                        <a href="Projects.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Projects</a>
+                        <a href="Blog.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Blog</a>
+                        <a href="Contact.html"
+                            class="text-white hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-md font-medium">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="Properties.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Properties</a>
+                <a href="Projects.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="Blog.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="Contact.html"
+                    class="text-white hover:bg-red-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contact Section -->
+    <section class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+            <h2 class="text-3xl font-bold mb-8 text-left custom-font-oswald"> Your Gateway to Our Locations </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Content: Noida Head Office -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Noida (Head Office)</h3>
+                    <p class="text-gray-700 mb-2">Riana Aurum, 4th floor,<br> Plot No. 111, Sector 136<br>Noida, U.P.
+                        201304</p>
+                    <p class="text-gray-700 mb-2">Phone: <a href="tel:+917088470884" class="text-purple-600">+91 70884
+                            70884</a></p>
+                    <p class="text-gray-700 mb-2">Email: <a href="mailto:info@starestate.in"
+                            class="text-purple-600">info@starestate.in</a></p>
+                    <p class="text-gray-700 mb-2">UP RERA: <a href="https://www.up-rera.in" class="text-purple-600"
+                            target="_blank">UPRERAAGT10202</a></p>
+                </div>
+
+                <!-- Right Content: Map -->
+                <div class="bg-gray-200 rounded-lg shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.046137460284!2d77.35398331531225!3d28.569955282410226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c8c7e4a7e2f1f%3A0x65cb68f5a5a3eb1c!2sRiana%20Aurum!5e0!3m2!1sen!2sin!4v1662921461460!5m2!1sen!2sin"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+            <h2 class="text-4xl font-bold text-white mb-8 text-center">Get in Touch</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Content: Contact Form -->
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md bg-white">
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="name">Your Name</label>
+                            <input type="text" id="name"
+                                class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition duration-200"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="phone">Your Phone</label>
+                            <input type="tel" id="phone"
+                                class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition duration-200"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="email">Your Email</label>
+                            <input type="email" id="email"
+                                class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition duration-200"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="3"
+                                class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 transition duration-200"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300 w-full">Contact
+                            Us</button>
+                    </form>
+                </div>
+
+                <!-- Right Content: Contact Information -->
+                <div class="p-6 rounded-lg shadow-md bg-white border border-gray-300">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center bg-purple-100 p-3 rounded-lg">
+                            <i class="fas fa-map-marker-alt text-purple-600 mr-2" style="font-size: 26px;"></i>
+                            <span class="text-gray-700">Site Office: Plot No.02, Sector 140, Noida Expressway, U.P. –
+                                201305</span>
+                        </div>
+                        <div class="flex items-center bg-purple-100 p-3 rounded-lg">
+                            <i class="fas fa-envelope text-purple-600 mr-2" style="font-size: 26px;"></i>
+                            <span class="text-gray-700">Email: <a href="mailto:info@gygygroup.com"
+                                    class="text-purple-600 hover:underline">info@gygygroup.com</a></span>
+                        </div>
+                        <div class="flex items-center bg-purple-100 p-3 rounded-lg">
+                            <i class="fas fa-phone-alt text-purple-600 mr-2" style="font-size: 26px;"></i>
+                            <span class="text-gray-700">Phone: <a href="tel:+919990902140"
+                                    class="text-purple-600 hover:underline">+91 9990902140</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Next Section: Gurugram Office -->
+    <section class="py-10 bg-gray-50 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6  lg:px-20">
+            <div class="mt-10">
+
+                <div class="flex flex-col md:flex-row">
+                    <!-- Left Content: Map -->
+                    <div class="md:w-1/2 bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.046137460284!2d77.35398331531225!3d28.569955282410226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c8c7e4a7e2f1f%3A0x65cb68f5a5a3eb1c!2sRiana%20Aurum!5e0!3m2!1sen!2sin!4v1662921461460!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Right Content: Gurugram Office Text -->
+                    <div class="md:w-1/2 bg-gray-50 p-6 rounded-lg shadow-lg ml-4">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Gurugram Office</h3>
+                        <p class="text-gray-700 mb-2">4th Floor, Suncity Success Tower,<br>430-432, Golf-Course Extn.
+                            Road,<br>The Close South, Sector 50,<br>Gurugram, Haryana - 122102</p>
+                        <p class="text-gray-700 mb-2">Email: <a href="mailto:info@starestate.in"
+                                class="text-purple-600 hover:underline">info@starestate.in</a></p>
+                        <p class="text-gray-700 mb-2">Haryana RERA: <a href="https://haryanarera.gov.in"
+                                class="text-purple-600 hover:underline"
+                                target="_blank">RC/HARERA/GGM/1654/1249/2022/22</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Enhanced Footer Section with Gradient -->
+    <footer class="bg-gradient-to-r from-purple-900 to-red-600 text-white px-6 lg:px-20 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Your Company Name</h3>
+                <p class="text-sm mb-2">Your trusted partner in real estate, dedicated to helping you find your
+                    dream
+                    property.</p>
+                <p class="text-sm mb-2">Address: 1234 Real Estate Ave, Noida, India</p>
+                <p class="text-sm">Join us in shaping a better community through real estate innovation.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Properties</a></li>
+                    <li><a href="#" class="hover:underline">Projects</a></li>
+                    <li><a href="#" class="hover:underline">Gallery</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                <p class="text-sm mb-2">Phone: <a href="tel:+911234567890" class="hover:underline">+91 123 456
+                        7890</a>
+                </p>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@realestate.com"
+                        class="hover:underline">info@realestate.com</a></p>
+                <p class="text-sm mb-2">Follow us for the latest updates and news:</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="hover:text-purple-300"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-purple-500 pt-4">
+            <p class="text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p class="text-xs">Designed with care by [Your Name or Company].</p>
+        </div>
+    </footer>
+
+
+    <!-- Include Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

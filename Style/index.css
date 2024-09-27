@@ -1,0 +1,11 @@
+.custom-border-radius {
+    border-top-left-radius: 150px; 
+    height: 450px;
+    
+}
+
+/* Custom Font Class */
+.custom-font-oswald {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
+}
